@@ -1,7 +1,8 @@
 @inproceedings{holder2022contact,
-  title={Contact-Free Simultaneous Sensing of Human Heart Rate and Canine Breathing Rate for Animal Assisted Interactions},
+  title={Contact-free simultaneous sensing of human heart Rate and canine breathing rate for animal assisted interactions},
   author={Holder, Timothy and Rahman, Mushfiqur and Summers, Emily and Roberts, David and Wong, Chau-Wai and Bozkurt, Alper},
-  booktitle={Proceedings of the Ninth International Conference on Animal-Computer Interaction},
-  pages={1--10},
-  year={2022}
+  booktitle={ACM International Conference on International Conference on Animal-Computer Interaction},
+  year={2022},
+  month={December},
+  address={Newcastle upon Tyne, UK}
 }
