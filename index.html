@@ -251,7 +251,7 @@
   <center>
     <h2>Abstract</h2>
   </center>
-Animal Assisted Interventions (AAIs) are interactions between people and animals, i.e., patting a dog, that can benefit both. Analyzing the outcome in human or animal faces challenges due to subjective methods and difficulties in attaching sensors to animals. This paper proposes a new approach that uses cameras to remotely measure human heart rate and dog breathing rate during interactions, with promising results. This method could have applications in various fields beyond research, including veterinary, surgical, and clinical settings. <br>
+Animal Assisted Interventions (AAIs) are interactions between people and animals, i.e., patting a dog, and those can benefit both. Analyzing the outcome in human or animal is challenging due to subjective nature of the outcome and difficulties in attaching sensors to animals. This paper proposes a new approach that uses cameras to remotely measure human heart rate and dog breathing rate during interactions, and shows promising results. This method could have applications in various fields beyond research, including veterinary, surgical, and clinical settings. <br>
 
 
   <br>
@@ -355,8 +355,9 @@ Animal Assisted Interventions (AAIs) are interactions between people and animals
       <br>
 
 
-In this study, we introduced a contact-free method using regular cameras to study interactions between humans and dogs. We remotely measured the heart rate of humans and the breathing rate of dogs during their interactions. We recorded videos with an iPhone Camera to capture the intensity of human face and hands that fluctuates periodically due to blood pumping by the heart. Delicate analysis of Fourier domain spectrogram is necessary to separate subtle heart rate signal from other noise components. The estimated heart rate is compared with heart rate measurement from wrist watch. For breathing rate estimation we extract the flow of motion in x and y direction along the region of a dog's belly. A neural netowrk is used to capture the motion and then the motion is analyzed in the frequency domain similar to the breathing rate estimation.
+In this study, we introduced a contact-free method using regular cameras to study interactions between humans and dogs. We remotely measured the heart rate of humans and the breathing rate of dogs during their interactions. We recorded videos with an iPhone Camera to capture the intensity of human face and hands that fluctuates periodically due to the change of oxygen concentrataion within blood blood. Delicate analysis of spectrogram in Fourier domain is necessary to separate subtle heart rate signal from other noise components. The camera estimated heart rate is compared with gold statndard heart rate such as that from wrist watch. For breathing rate estimation we extract the flow of motion in x and y direction along the region of a dog's belly. A neural netowrk is used to capture the motion and then the motion is analyzed in the frequency domain similar to the heart rate estimation.
       <br>
+      For delicate frequency domain analysis, we use the <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9220114">Adaptive multi-trace carving (AMTC)</a> algorithm, that helps us to separate a weak frequency signal among unwanted strong ones.
       <br>
     <table align="center" width="1000px">
       <tbody>
@@ -371,11 +372,7 @@ In this study, we introduced a contact-free method using regular cameras to stud
     </table>
     <br>
 
-    As an additional test, we also ran AMTC on a special video
-    containing the case of periodic patting behavior of the human hand
-    during AAI. This was to test the possibility of detecting canine
-    breath motion when the breath signal is not the primary source
-    of overall periodic motion.
+    For example, using AMTC we are able to separate out the frequency due to periodic patting of human during AAI from the breathing frequency of the animal.
 
     </span>
 
