@@ -148,13 +148,13 @@
   <center>
     <span style="font-size:34px">Contact-Free Simultaneous Sensing of Human Heart Rate and <br>Canine Breathing Rate for Animal Assisted Interactions</span><br><br>
     <span style="font-size:23px">Application of Computer vision <br>to Estiamte Canine Breathing Rate and Human Heart Rate from Video in AAI context</span><br><br>
-
+    <span style="font-size:23px"><sup><a href="./bib.txt" target="_blank">[Bibtex]</a></sup></span>
     <table align="center" width="850px">
       <tbody>
         <tr>
           <td align="center" width="205px">
             <center>
-              <span style="font-size:20px"><a href=""> Timothy Holder </a><sup>1</sup></span>
+              <span style="font-size:20px">Timothy Holder <sup>1</sup></span>
             </center>
           </td>
           <td align="center" width="175px">
@@ -164,7 +164,7 @@
           </td>
           <td align="center" width="175px">
             <center>
-              <span style="font-size:20px"><a href="">Emily Summers</a><sup>1</sup></span>
+              <span style="font-size:20px">Emily Summers<sup>1</sup></span>
             </center>
           </td>
           <td align="center" width="175px">
@@ -174,7 +174,7 @@
           </td>
           <td align="center" width="175px">
             <center>
-              <span style="font-size:20px"><a href="https://ncsu-cwwong.org/">Chau-Wai Wong</a><sup>1</sup></span>
+              <span style="font-size:20px"><a href="https://ncsu-wong.org/">Chau-Wai Wong</a><sup>1</sup></span>
             </center>
           </td>
           <td align="center" width="175px">
@@ -251,110 +251,13 @@
   <center>
     <h2>Abstract</h2>
   </center>
-  Animal Assisted Interventions (AAIs) involve pleasant interactions
-  between humans and animals and can potentially benefit both types
-  of participants. Research in this field may help to uncover univer-
-  sal insights about cross-species bonding, dynamic affect detection,
-  and the influence of environmental factors on dyadic interactions.
-  However, experiments evaluating these outcomes are limited to
-  methodologies that are qualitative, subjective, and cumbersome
-  due to the ergonomic challenges related to attaching sensors to
-  the body. Current approaches in AAIs also face challenges when
-  translating beyond controlled clinical environments or research con-
-  texts. These also often neglect the measurements from the animal
-  throughout the interaction. Here, we present our preliminary effort
-  toward a contact-free approach to facilitate AAI assessment via the
-  physiological sensing of humans and canines using consumer-grade
-  cameras. This initial effort focuses on verifying the technological
-  feasibility of remotely sensing the heart rate signal of the human
-  subject and the breathing rate signal of the dog subject while they
-  are interacting. Small amounts of motion such as patting and invol-
-  untary body shaking or movement can be tolerated with our custom
-  designed vision-based algorithms. The experimental results show
-  that the physiological measurements obtained by our algorithms
-  were consistent with those provided by the standard reference de-
-  vices. With further validation and expansion to other physiological
-  parameters, the presented approach offers great promise for many
-  scenarios from the AAI research space to veterinary, surgical, and
-  clinical applications. <br>
+Animal Assisted Interventions (AAIs) are interactions between people and animals, i.e., patting a dog, that can benefit both. Analyzing the outcome in human or animal faces challenges due to subjective methods and difficulties in attaching sensors to animals. This paper proposes a new approach that uses cameras to remotely measure human heart rate and dog breathing rate during interactions, with promising results. This method could have applications in various fields beyond research, including veterinary, surgical, and clinical settings. <br>
 
 
   <br>
 
-
-  <center>
-    <h2>Result</h2>
-  </center>
-
-  <table align="center" width="1000px">
-    <tbody>
-      <tr>
-        <td width="400px">
-          <center>
-            <img class="rounded" src="./assets/result.png" width="700px">
-          </center>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <hr>
-    <div class="disclaimerbox">
-     
-
-    <span style="color:#646464">
-      <center><span style="font-size:28px"><b>Discussion</b></span></center>
-
-      <br>
-
-
-      In this paper, we have presented a contact-free approach to facili-
-      tate AAI studies via physiological sensing of humans and canines
-      using consumer-grade cameras. In this preliminary study, we re-
-      motely sensed the HR signal of human subjects and the BR signal
-      of dog subjects while they interacted with each other. Comparing
-      the estimates produced by the proposed methods here with the ref-
-      erence gold-standard measurements has shown that our approach can tolerate specific amounts of motion such as involuntary body
-      movement. Furthermore, spurious periodic signals such as those
-      due to human patting can be isolated to unveil the desired canine
-      breathing signal. This proof-of-concept work presents, for the first
-      time, an effort toward 1) remote camera-based assessment of BR
-      in dogs, and 2) simultaneous detection of dog BR and human HR
-      during AAIs. Further development and validation of this remote
-      physiological sensing setup may enable free monitoring of dyadic
-      interactions between humans and animals in a noninvasive and
-      unencumbered way for improving the efficiency and effectiveness
-      of various AAI applications.
-      <br>
-      <br>
-    <table align="center" width="1000px">
-      <tbody>
-        <tr>
-          <td width="400px">
-            <center>
-              <img class="rounded" src="./assets/spectrogram-multiple-trace.png" width="700px">
-            </center>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <br>
-
-    As an additional test, we also ran AMTC on a special video
-    containing the case of periodic patting behavior of the human hand
-    during AAI. This was to test the possibility of detecting canine
-    breath motion when the breath signal is not the primary source
-    of overall periodic motion.
-
-    </span>
-
-  </div> 
-  
-  <br>
-  <hr>
-
-  <center>
-    <h2>Video Tutorial on the Published Code</h2>
+<center>
+  <h2>Video Tutorial on the Published Code</h2>
   </center>
   <center>
   <table align="center" width="750px">
@@ -388,6 +291,62 @@
     </tbody>
   </table>
 </center>
+
+
+  <center>
+    <h2>Result</h2>
+  </center>
+
+  <table align="center" width="1000px">
+    <tbody>
+      <tr>
+        <td width="400px">
+          <center>
+            <img class="rounded" src="./assets/result.png" width="700px">
+          </center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+    <div class="disclaimerbox">
+     
+
+    <span style="color:#646464">
+      <center><span style="font-size:28px"><b>Discussion</b></span></center>
+
+      <br>
+
+
+In this study, we introduced a contact-free method using regular cameras to study interactions between humans and dogs. We remotely measured the heart rate of humans and the breathing rate of dogs during their interactions. We recorded videos with an iPhone Camera to capture the intensity of human face and hands that fluctuates periodically due to blood pumping by the heart. Delicate analysis of Fourier domain spectrogram is necessary to separate subtle heart rate signal from other noise components. The estimated heart rate is compared with heart rate measurement from wrist watch. For breathing rate estimation we extract the flow of motion in x and y direction along the region of a dog's belly. A neural netowrk is used to capture the motion and then the motion is analyzed in the frequency domain similar to the breathing rate estimation.
+      <br>
+      <br>
+    <table align="center" width="1000px">
+      <tbody>
+        <tr>
+          <td width="400px">
+            <center>
+              <img class="rounded" src="./assets/spectrogram-multiple-trace.png" width="700px">
+            </center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    As an additional test, we also ran AMTC on a special video
+    containing the case of periodic patting behavior of the human hand
+    during AAI. This was to test the possibility of detecting canine
+    breath motion when the breath signal is not the primary source
+    of overall periodic motion.
+
+    </span>
+
+  </div> 
+  
+  <br>
+  <hr>
 
    
   <center>
@@ -427,16 +386,16 @@
   <hr>
 
   <center>
-    <h2>Paper</h2>
+    <h2>Citation</h2>
   </center><br>
   <table align="center" width="700" px="">
 
     <tbody>
       <tr>
         <td><a href="https://arxiv.org/pdf/1912.13457.pdf"><img class="layered-paper-big" style="height:175px" src="./assets/firstpage.png"></a></td>
-        <td><span style="font-size:12pt">Timothy Holder, Mushfiqur Rahman, Emily Summers, David Roberts, Chau-Wai Wong, Alper Bozkurt.</span><br>
-          <b><span style="font-size:12pt">Contact-Free Simultaneous Sensing of Human Heart Rate and Canine Breathing Rate for Animal Assisted Interactions</span></b><br>
-          <span style="font-size:12pt">In ACI, 2022 (oral presentation). (<a href="https://arxiv.org/pdf/2211.03636.pdf">Paper</a>)</span>
+        <td><span style="font-size:12pt">Timothy Holder, Mushfiqur Rahman, Emily Summers, David Roberts, Chau-Wai Wong, Alper Bozkurt,</span><br>
+          <b><span style="font-size:12pt">“Contact-free simultaneous sensing of human heart rate and canine breathing rate for animal assisted interactions,”</span></b><br>
+          <span style="font-size:12pt">Newcastle upon Tyne, UK, 5–8 Dec. 2022. (<a href="https://arxiv.org/pdf/2211.03636.pdf">Paper</a>)</span>
         </td>
 
 
@@ -468,10 +427,10 @@
         <td width="400px">
           <left>
             <center>
-              <h2>Acknowledgements</h2>
+              <h2>Acknowledgments</h2>
             </center>
             We are thankful to the authors of <a href="https://github.com/zacjiang/GMA">Global Motion Aggregation</a> and <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9220114">Adaptive Multi-Trace Carving for Robust Frequency
-              Tracking in Forensic Applications</a>. Source code of this  webpage is borrowed from  <a href="https://peterwang512.github.io/">Peter Wang</a>.
+              Tracking in Forensic Applications</a>. Source code of this  webpage is adapted from  <a href="https://peterwang512.github.io/">Peter Wang</a>.
           </left>
         </td>
       </tr>
